@@ -1,6 +1,10 @@
-console.log("hello");
+// console.log("hello");
 
-// const math = require("./math");
+// import {add, subtract} from "./math.js";
+
+
+// console.log(add(3,2));
+
 // console.log(math.add(12,3));
 // console.log(math.subtract(12,3));
 
@@ -8,17 +12,23 @@ console.log("hello");
 
 
 
-// const express = require('express');
-// const app = express();
+import express from 'express';
+const app = express();
 
-// app.get('/', (req, res) => {
-//   res.send('Welcome to My Backend Server!');
-// });
+app.get('/', (req, res) => {
+  res.send('Welcome to My Backend Server!');
+});
 
-// app.get('/about', (req, res) => {
-//   res.send('Welcome to My About Page!');
-// });
 
-// app.listen(5000, () => {
-//   console.log(`Server running on http://localhost:5000`);
-// });
+app.get("/about", (req,res)=>{
+    res.send("This is my about page")
+})
+
+app.get("/contact", (req,res)=>{
+    res.send("this is our contact page")
+})
+
+
+app.listen(5000, () => {
+  console.log(`Server running on http://localhost:5000`);
+});
