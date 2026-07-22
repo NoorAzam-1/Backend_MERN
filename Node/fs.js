@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 // Created File
-fs.writeFileSync("createFileUsingFs.txt", "hello Noor Are you Free");
+fs.writeFileSync("createFileUsingFs.txt", "hello Noor Are you Free Free");
 
 // Asynchronous read file
 fs.readFile("createFileUsingFs.txt", "utf-8", (err, data) => {
