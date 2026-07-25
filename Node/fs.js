@@ -1,21 +1,25 @@
-const fs = require("fs");
+import fs from "fs";
 
-// Created File
-fs.writeFileSync("createFileUsingFs.txt", "hello Noor Are you Free Free");
+fs.writeFileSync("createFileUsingFs.txt", "1.hello Noor Are you available");
 
-// Asynchronous read file
+
 fs.readFile("createFileUsingFs.txt", "utf-8", (err, data) => {
   if (err) {
     console.log("Error :", err);
     return;
   }
-  console.log("3. File ka data aa gaya:", data);
+  console.log("3. Data of File:", data);
 });
 
-// Synchronous Read File
 const readedData = fs.readFileSync("createFileUsingFs.txt", "utf-8");
-console.log("readed data", readedData);
+console.log("3.readed data", readedData);
 
 
 
 
+fs.mkdir('my_logs', (err) => {
+  if (err) console.log("Folder banane mein error:", err);
+  else console.log("Folder ban gaya!");
+});
+
+fs.mkdirSync('logs/2026/july', { recursive: true });
