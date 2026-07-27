@@ -1,6 +1,6 @@
 import fs from "fs";
 
-// fs.writeFileSync("notes.txt", "1.hello Noor Are you available");
+fs.writeFileSync("notes.txt", "1.hello Noor Are you available");
 
 // fs.writeFile("createFileUsingFs.txt","nested file", (err)=>{
 //   if(err){
@@ -20,11 +20,9 @@ import fs from "fs";
 //   console.log(data)
 // })
 
-
-fs.mkdirSync('logs', { recursive: true });
+// fs.mkdirSync("logs", { recursive: true });
 
 // fs.mkdir("my_logs", (err) => {
-//   if (err) console.log("Folder banane mein error:", err);
-//   else console.log("Folder ban gaya!");
+//   if (err) console.log("Folder error:", err);
+//   else console.log("Folder created!");
 // });
-
