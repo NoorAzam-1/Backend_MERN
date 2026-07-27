@@ -1,15 +1,24 @@
 import fs from "fs";
+console.log("hello 1");
 
-// fs.writeFileSync("notes.txt", "1.hello Noor Are you available");
+// fs.writeFileSync("notes.txt","hello")
 
-// fs.writeFile("createFileUsingFs.txt","nested file", (err)=>{
-//   if(err){
-//     console.log(err);
-//     return
-//   }
+
+
+
+// fs.appendFile("notes.txt", "const num = 15", (err)=>{
+//     if(err){
+//         console.log("file error",err)
+//     }
 // })
 
-// fs.appendFileSync('notes.txt', '\n Second Note: Logging active.');
+fs.unlink("notes.txt",(err)=>{
+    console.log("error",err)
+})
+
+// fs.appendFileSync("notes.txt", "new data added")
+
+
 
 // fs.appendFile('notes.txt', '\n Third Note: Server restarted.', (err) => {
 //   if (err) console.log(err);
@@ -27,10 +36,10 @@ import fs from "fs";
 //   console.log(data)
 // })
 
-fs.readdir("./", { recursive: true }, (err, files) => {
-  if (err) console.log(err);
-  else console.log("File lists:", files);
-});
+// fs.readdir("./", { recursive: true }, (err, files) => {
+//   if (err) console.log(err);
+//   else console.log("File lists:", files);
+// });
 
 // fs.unlink('notes.txt', (err) => {
 //   if (err) {
