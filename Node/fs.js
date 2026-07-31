@@ -1,8 +1,8 @@
 import fs from "fs";
 
-// fs.writeFileSync("notes.txt","hello");
+// fs.writeFileSync("notes.pdf","hello");
 
-// fs.appendFileSync("notes.txt", "new data added")
+// fs.appendFileSync("notes.pdf", "new data added")
 
 // fs.appendFile('notes.txt', '\n Third Note: Server restarted.', (err) => {
 //   if (err) console.log(err);
@@ -18,10 +18,10 @@ import fs from "fs";
 //   console.log("File deleted successfully!");
 // });
 
-// const readedData = fs.readFileSync("notes.txt", "utf-8");
+// const readedData = fs.readFileSync("notes.pdf","utf-8");
 // console.log("3.readed data ", readedData);
 
-// const readedDataAsync = fs.readFile("notes.txt", "utf-8", (err, data)=>{
+// fs.readFile("notes.txt", "utf-8", (err, data)=>{
 //   if(err){
 //     console.log(err)
 //     return
@@ -30,14 +30,17 @@ import fs from "fs";
 // })
 
 
+// fs.mkdirSync("folder/1", {recursive: true});
 
-// fs.mkdirSync("logs", { recursive: true });
 
 // fs.mkdir("my_logs", (err) => {
 //   if (err) console.log("Folder error:", err);
 //   else console.log("Folder created!");
 // });
 
+
+// const readdir = fs.readdirSync("./folder");
+// console.log("readdir",readdir)
 
 
 // fs.readdir("./", { recursive: true }, (err, files) => {
@@ -47,7 +50,7 @@ import fs from "fs";
 
 
 
-// fs.renameSync('logs1', 'archive_logs');
+// fs.renameSync('archive_logs', "folder");
 //   console.log("Folder rename successfully!");
 
 
@@ -56,5 +59,5 @@ import fs from "fs";
 //   else console.log("Folder deleteted successfully!");
 // });
 
-// fs.rmSync('logs', { recursive: true, force: true });
+// fs.rmSync('./folder/1', { recursive: true });
 
