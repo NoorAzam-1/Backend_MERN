@@ -18,6 +18,8 @@ import fs from "fs";
 //   console.log("File deleted successfully!");
 // });
 
+
+
 // const readedData = fs.readFileSync("notes.txt", "utf-8");
 // console.log("3.readed data ", readedData);
 
