@@ -61,5 +61,5 @@ import fs from "fs";
 //   else console.log("Folder deleteted successfully!");
 // });
 
-// fs.rmSync('./folder/1', { recursive: true });
+// fs.rmSync('./folder', { recursive: true });
 
