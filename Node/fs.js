@@ -23,13 +23,13 @@ import fs from "fs";
 // const readedData = fs.readFileSync("notes.pdf","utf-8");
 // console.log("3.readed data ", readedData);
 
-// fs.readFile("notes.txt", "utf-8", (err, data)=>{
-//   if(err){
-//     console.log(err)
-//     return
-//   }
-//   console.log(data)
-// })
+fs.readFile("notes.txt", "utf-8", (err, data)=>{
+  if(err){
+    console.log(err)
+    return
+  }
+  console.log(data)
+})
 
 
 // fs.mkdirSync("folder/1", {recursive: true});
