@@ -1,9 +1,12 @@
-// console.log("hello");
+console.log("hello");
 
+const a = 20;
+const b = 40;
+
+console.log("sum of a and b", a + b);
 // import {add, subtract} from "./math.js";
 // console.log(add(3,2));
-// console.log(math.add(12,3));
-// console.log(math.subtract(12,3));
+// console.log(subtract(12,3));
 
 
 
