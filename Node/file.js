@@ -31,7 +31,7 @@ import fs from "fs";
 
 // const readedData = fs.readFileSync("notes.pdf","utf-8");
 // console.log("readed data== ", readedData);
-
+   
 // fs.readFile("notes.pdf", "utf-8", (err, data)=>{
 //   if(err){
 //     console.log(err)
